@@ -1,0 +1,31 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 2fr;
+  grid-template-areas: "header-logo header-nav header-contacts" ".  header-text  .";
+  grid-template-rows: 1fr 10fr;
+  grid-column-gap: 20px;
+  min-height: 600px;
+  align-items: center;
+}
+.header-logo {
+  grid-area: header-logo;
+  justify-self: center;
+}
+.header-nav {
+  grid-area: header-nav;
+}
+.header-contacts {
+  grid-area: header-contacts;
+  justify-self: center;
+}
+.header-text {
+  grid-area: header-text;
+}
