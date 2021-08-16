@@ -186,7 +186,7 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 1360px) {
+@media screen and (max-width: 1150px) {
   .header {
     grid-template-rows: 1fr 1fr 7fr;
     grid-template-columns: 1fr 5fr 2fr;
@@ -208,7 +208,7 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 800px) {
   .header {
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.7fr 10fr;
@@ -218,6 +218,7 @@ body {
   }
   .header-contacts {
     grid-column: 2/3;
+    grid-row: 2/3;
     justify-self: start;
   }
   .header-text {
