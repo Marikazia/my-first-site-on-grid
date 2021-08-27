@@ -181,6 +181,7 @@ body {
 .header .thumbs {
   display: grid;
   grid-template-columns: repeat(5, auto);
+  margin-top: -20px;
   margin-bottom: 20px;
 }
 
@@ -236,6 +237,12 @@ body {
 
 .about__text {
   align-items: start;
+}
+
+.services-nav {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
 }
 
 @media (max-width: 1650px) {
@@ -330,5 +337,22 @@ body {
   }
   .header-text {
     max-width: 450px;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    grid-template-columns: repeat(auto);
+    padding: 0 20px;
+  }
+  .section-title {
+    grid-column: 2/3;
+    font-size: 36px;
+  }
+  .section-description {
+    font-size: 18px;
+  }
+  .about-row {
+    grid-template-columns: repeat(auto-fill, minmax(100%, max-content));
   }
 }
