@@ -239,10 +239,80 @@ body {
   align-items: start;
 }
 
+.services {
+  min-height: 700px;
+  position: relative;
+  grid-template-rows: 2fr 10fr;
+  align-items: center;
+  font-size: 18px;
+}
+
+.services-nav, .services-promoters {
+  position: relative;
+}
+
 .services-nav {
+  grid-area: services-nav;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
+  align-items: start;
+}
+
+.services-nav__link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.services-nav__link:last-child {
+  margin-right: 0;
+}
+
+.services-promoters {
+  padding: 3% 0;
+  justify-self: end;
+  margin-bottom: 50px;
+  max-width: 600px;
+  grid-area: services-promoters;
   grid-column: 2/3;
   grid-row: 3/4;
   display: grid;
+  grid-row-gap: 50px;
+  justify-content: flex-start;
+}
+
+.services-promoters-buttons {
+  grid-template-areas: services-button;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.services-promoters-buttons__link {
+  margin-left: 39px;
+}
+
+.services-promoters-buttons__link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 89, 31, 0.7);
+}
+
+.services-promoters-arrows {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.service-img {
+  grid-template-areas: services;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 500px;
 }
 
 @media (max-width: 1650px) {
