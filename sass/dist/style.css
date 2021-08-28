@@ -239,6 +239,18 @@ body {
   align-items: start;
 }
 
+.service-img {
+  grid-template-areas: services;
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  width: 650px;
+}
+
+.promoters-title {
+  font-size: 55px;
+}
+
 .services {
   min-height: 700px;
   position: relative;
@@ -253,7 +265,7 @@ body {
 
 .services-nav {
   grid-area: services-nav;
-  display: grid;
+  grid-template-columns: repeat(5, auto);
   grid-column: 2/3;
   grid-row: 2/3;
   position: relative;
@@ -305,14 +317,6 @@ body {
 .services-promoters-arrows {
   grid-column: 2/3;
   grid-row: 5/6;
-}
-
-.service-img {
-  grid-template-areas: services;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 500px;
 }
 
 @media (max-width: 1650px) {
